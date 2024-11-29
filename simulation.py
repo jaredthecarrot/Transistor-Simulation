@@ -50,7 +50,7 @@ def screen_materials_with_rf(material_data):
     dataset = pd.DataFrame({
         "band_gap": [0.61, 0.00, 1.1, 1.5, 2.0, 0.8],
         "energy_above_hull": [0.000, 0.000, 0.005, 0.01, 0.02, 0.04],
-        "suitable": [1, 1, 1, 1, 0, 0]
+        "suitable": [1, 1, 1, 0, 0, 0]
     })
 
     features = dataset[["band_gap", "energy_above_hull"]]
@@ -67,7 +67,7 @@ def screen_materials_with_rf(material_data):
     return prediction[0] == 1
 
 def main():
-    material_ids = ["mp-149", "mp-32"]
+    material_ids = ["mp-149", "mp-32", "mp-2348641"]
     materials = fetch_material_data(material_ids)
 
     for material in materials:
