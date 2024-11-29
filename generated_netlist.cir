@@ -2,7 +2,7 @@
 V1 N001 0 PULSE(0 5 0 0.1ms 0.1ms 5ms 10ms) ; Voltage source
 V2 N002 0 DC 1 ; Gate bias
 M1 N001 N002 0 0 NMOS   ; NMOS transistor with dynamic parameters
-.model NMOS NMOS (KP=1.0 VTO=0.0) ; Placeholder for material properties
+.model NMOS NMOS (KP=1.0 VTO=0.011830000000000096) ; Placeholder for material properties
 .tran 0.1 1s              ; Transient analysis
 .save V(N001) V(N002)
 .end
