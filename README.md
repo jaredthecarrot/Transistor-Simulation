@@ -22,6 +22,8 @@ cd Transistor-Simulation
 python simulation.py
 ```
 ### 3. Usage
+
+LTSPICE_EXE_PATH in the simulation.py must be changed to the path to your LTSpice executable.
 When running the simulation script, the terminal will display the material suitability
 and there will be popups of LTSpice simulations showing you performnace of each transistor.
 To graph the circuit, you will need to right clock and select Add Traces, and then select the
